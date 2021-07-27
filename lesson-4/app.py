@@ -9,7 +9,7 @@ async def on_shutdown(dp):
 
 
 async def on_startup(dp):
-    await bot.send_message(admin_id, "Я запущен!")
+    await bot.send_message(admin_id, "Sirius bot запущен!")
 
 
 if __name__ == '__main__':

@@ -2,6 +2,7 @@ from loader import bot, storage
 
 
 async def on_shutdown(dp):
+    await bot.send_message(chat_id=admin_id, text="Бот остановлен")
     await bot.close()
     await storage.close()
 

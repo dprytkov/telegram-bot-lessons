@@ -21,6 +21,8 @@ async def create_db():
 
 
 async def create_pool():
+    logging.info(f"User={PG_USER}, password={PG_PASS}, host={host}")
+
     return await asyncpg.create_pool(user=PG_USER,
                                      password=PG_PASS,
                                      host=host)
